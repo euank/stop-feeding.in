@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <link href="/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+        <meta name="language" content="en" />
+        <meta name="title" content="About" />
+    </head>
+    <body>
+    <div class="head">
+      <div class="header">
+        <div class="headerkop">Stop feeding in DOTA2!</div>
+        <div class="menu">
+          <ul>
+            <li {% if page.active == "news" %}id="active"{% endif %}>
+            <a href="/dota2/news" title="News">News</a></li>
+            <li {% if page.active == "about" %}id="active"{% endif %}>
+            <a href="/dota2/about" title="About">About</a></li>
+            <li {% if page.active == "what-is-feeding" %}id="active"{% endif %}>
+            <a href="/dota2/what-is-feeding" title="What is feeding">What is feeding</a></li>
+            <li {% if page.active == "fighting-feeding" %}id="active"{% endif %}>
+            <a href="/dota2/fighting-feeding" title="Fighting feeding">Fighting feeding</a></li>
+            <li {% if page.active == "live-chat" %}id="active"{% endif %}>
+            <a href="/dota2/live-chat" title="Live chat">Live chat</a></li>
+            <li {% if page.active == "we-want-you" %}id="active"{% endif %}>
+            <a href="/dota2/we-want-you" title="We want you">We want you</a></li>
+            <li {% if page.active == "contact-us" %}id="active"{% endif %}>
+            <a href="/dota2/contact-us" title="Contact us">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        {{ content }}
+        <div style="clear: both;">
+        </div>
+
+
+
+        <div class="footer">
+          <a href="/dota2/fighting-feeding/anti-feeder-script" title="Anti-Feeder-Script">Anti-Feeder-Script&trade;</a> 
+          <!-- &mdash; <a href="Create Google+ TODO" title="Stop DOTA2 Feeding Foundation Google Plus Profile">+1 us on Google+</a> &mdash; <a href="Create Twitter TODO" title="Stop DOTA2 Feeding Foundation Twitter Timeline">Follow us on Twitter!</a>-->
+          &mdash; <a href="http://stop-feeding.in" title="Stop Feeding Foundation">&copy; 2014, SFF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

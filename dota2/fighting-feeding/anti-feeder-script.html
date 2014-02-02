@@ -1,0 +1,29 @@
+---
+layout: dota2
+title: Fighting Feeding &middot; Anti-Feeder-Script - Stop feeding in DOTA2!
+active: fighting-feeding
+---
+
+<div class="submenu">
+<ul>
+  <li><a href="best-practice" title="Best practice">Best practice</a></li>
+  <li id="active"><a href="anti-feeder-script" title="Anti-Feeder-Script">Anti-Feeder-Script</a></li>
+  <li><a href="helpful-tips" title="Helpful Tips">Helpful Tips</a></li>
+</ul>
+</div>
+
+<div class="kop">Fighting feeding &middot; Anti-Feeder-Script</div>
+<div class="txt">
+  <h3>Our Anti-Feeder-Script for DOTA2</h3>
+  <p>The <strong>Anti-Feeder-Script</strong> is a nice way of half-<strong>automating</strong> the <strong>appeal against feeders in DOTA2.</strong></p>
+  <p>After you have followed the steps below, you can use <span>/feeder feedersname</span> on anyone feeding in your DOTA2 game(don't forget to replace "feedersname" with the actual nickname of the feeder).</p>
+  <p><em>If you have a better way to implement this, please <a title="Contact us" href="../contact-us">Contact us</a> so we can improve it.</em></p>
+  <p>Create an AutoHotKey script with the following text:</p>
+  <pre>#Hotstring EndChars  `t
+#IfWinActive ahk_class DOTA2
+::/bully::
+Send : I feel your recent action(s) led to feeding. Please read http://stop-feeding.in/dota2/stop.{Left 93}
+return</pre>
+  <p>Alternately, download the <a title="Anti-Feeder-Script" href="files/anti-feeder.exe">Anti-Feeder</a> script already compiled for you </p>
+  <p> <img style="display: block; margin-left: auto; margin-right: auto;" src="../images/6.jpg" alt="" /></p>
+</div>
